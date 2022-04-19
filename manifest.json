@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "And the Gang",
+  "version": "0.1.4",
+  "description": "Turns every mention of et al on any website into 'and the gang'",
+  "content_scripts": [
+    {
+    "matches": ["*://*/*"],
+    "js": ["content.js"],
+    "run_at":"document_end"
+
+  }
+]
+
+}
